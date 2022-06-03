@@ -1,0 +1,13 @@
+.pic {
+  margin: 20px;
+  border-radius: 50%;
+  width: 500px;
+}
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
