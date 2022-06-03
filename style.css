@@ -11,3 +11,13 @@ h1 {
   color: navy;
   margin-left: 20px;
 }
+.boxy {
+  border-radius: 4px;
+  box-shadow: 0 2px gray;
+  /* offset-x | offset-y | color */
+  filter: blur(2px);
+  background-color: #000000;
+  opacity: 0.2;
+  height: 10px;
+  /* 100% = 1 */
+}
