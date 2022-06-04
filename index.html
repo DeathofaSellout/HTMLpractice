@@ -1,116 +1,154 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta>
     <title>HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <a href="./cssCheatsheet.html">CSS Cheat Sheet</a>
-      <a href="./cssCheatsheet.html">CSS Cheat Sheet</a>
-      <a href="./cl.html">Command Line Cheat Sheet</a>
-      <a href="./github.html">Github Cheat Sheet</a>
-    </nav>
-    <h1 id="top-of-the-page">Death of a Sellout's HTML Tags Cheat Sheet</h1>
-    <h2>Table of Contents</h2>
+    <header>
+      <img src="./logo.png" class="logo" alt="logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="./cssCheatsheet.html">CSS Cheat Sheet</a></li>
+          <li><a href="./js.html">Javascript Cheat Sheet</a></li>
+          <li><a href="./cl.html">Command Line Cheat Sheet</a></li>
+          <li><a href="./github.html">Github Cheat Sheet</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact Me</button></a>
+    </header>
     <div>
-      <ul>
-        <a href="#headings">Headings</a>
-        <a href="#text-emphasis">Text Emphasis</a>
-        <a href="#paragraphs">Paragraphs</a>
-        <a href="#lists">Lists</a>
-        <a href="#anchors">Anchors</a>
-        <a href="#div-span">`div` and `span`</a>
-        <a href="#br">br</a>
-      </ul>
-
+      <h1 class="center" id="top-of-the-page">Death of a Sellout's HTML Tags Cheat Sheet</h1>
+      <h2 class="center">Table of Contents</h2>
+      <div class="center">
+        <ul class="nav_links">
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#text-emphasis">Text Emphasis</a></li>
+          <li><a href="#paragraphs">Paragraphs</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#anchors">Anchors</a></li>
+          <li><a href="#div-span">`div` and `span`</a></li>
+          <li><a href="#br">br</a></li>
+        </ul>
+      </div>
     </div>
 
-    <img src="./cats.jpg" class="pic" alt="cats">
+    <div class="container">
+    <div class="flexed">
+      <h2 id="headings">Headings</h2>
+      <p>
+      Headings from `h1` to `h6` identify blocks and sections. Every page must have one `h1`.
+      This site is using headings to show hierarchy.
+      </p>
+    </div>
 
-    <h2 id="headings">Headings</h2>
-    <p>
-    Headings from `h1` to `h6` identify blocks and sections. Every page must have one `h1`.
-    </p>
+    <div class="flexed">
+      <h2 id="text-emphasis">Text Emphasis</h2>
+      <h3>Italic</h3>
+      <em>
+        The `em` element adds extra emphasis to the text within the opening and closing tags. This shows up as italic text in
+        most browsers.
+      </em>
+      <h3>Bold</h3>
+      <strong>
+        You can also use the `strong` element to emphasize text. This shows up as bold text in most browsers.
+      </strong>
+    </div>
 
-    <h2 id="text-emphasis">Text Emphasis</h2>
-    <h3>Italic</h3>
-    <em>
-      The `em` element adds extra emphasis to the text within the opening and closing tags. This shows up as italic text in
-      most browsers.
-    </em>
-    <h3>Bold</h3>
-    <strong>
-      You can also use the `strong` element to emphasize text. This shows up as bold text in most browsers.
-    </strong>
+    <div class="flexed">
+      <h2 id="paragraphs">Paragraphs</h2>
+      <p>
+        Paragraphs of text go in `p` tags.
+      </p>
+    </div>
 
-    <h2 id="paragraphs">Paragraphs</h2>
-    <p>
-      Paragraphs of text go in `p` tags.
-    </p>
+    <div class="flexed">
+      <h2 id="lists">Lists</h2>
+      <h3>Unordered Lists</h3>
+      <p>
+        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+      </p>
+      <h4>Types of lists:</h4>
+      <ul>
+        <li>Unordered lists (`ul`)</li>
+        <li>Ordered lists (`ol`)</li>
+      </ul>
+      <h3>Ordered Lists</h3>
+      <p>
+        Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
+      </p>
+      <h4>What's required to become a Full Stack Web Dev</h4>
+      <ol>
+        <li>Master two languages of the Web.</li>
+        <li>Nail a front end framework.</li>
+        <li>Know your Algorithms.</li>
+        <li>Build apps with all of the above.</li>
+      </ol>
+    </div>
 
-    <h2 id="lists">Lists</h2>
-    <h3>Unordered Lists</h3>
-    <p>
-      Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
-    </p>
-    <h4>Types of lists:</h4>
-    <ul>
-      <li>Unordered lists (`ul`)</li>
-      <li>Ordered lists (`ol`)</li>
-    </ul>
-    <h3>Ordered Lists</h3>
-    <p>
-      Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
-    </p>
-    <h4>Polya's Problem Solving Framework</h4>
-    <ol>
-      <li>Understand the problem</li>
-      <li>Come up with a plan</li>
-      <li>Carry out the plan</li>
-      <li>Go back and improve your solution</li>
-    </ol>
+    <div class="flexed">
+      <h2 id="anchors">Anchors (i.e. links)</h2>
+      <p>
+        Anchor tags create links to other pages. The URL goes in the `href` attribute.
+        <a href="https://deathofasellout.github.io" target="_blank">
+          Go to my personal portfolio for more information on me.
+        </a>
+      </p>
+      <p>
+        Setting `target="_blank"` will open the link in a new window. See
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
+          MDN
+        </a>
+        for more details.
+      </p>
+    </div>
 
-    <h2 id="anchors">Anchors (i.e. links)</h2>
-    <p>
-      Anchor tags create links to other pages. The URL goes in the `href` attribute.
-      <a href="https://deathofasellout.github.io" target="_blank">
-        Go to my personal portfolio for more information on me.
-      </a>
-    </p>
-    <p>
-      Setting `target="_blank"` will open the link in a new window. See
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
-        MDN
-      </a>
-      for more details.
-    </p>
+    <div class="flexed">
+      <h2 id="div-span">Organizing Content with `div` and `span`</h2>
+      <h3>`div`</h3>
+      <p>
+        The `div` element is a block element, so each `div` will show up on a new line.
+      </p>
+      <div>1st div</div>
+      <div>2nd div</div>
+      <div>3nd div</div>
+      <h3>`span`</h3>
+      <p>
+        The `span` element is an inline element, so there will be no line break between each `span`.
+      </p>
+      <span>1st span</span>
+      <span>2nd span</span>
+      <span>3rd span</span>
+    </div>
 
-    <h2 id="div-span">Organizing Content with `div` and `span`</h2>
-    <h3>`div`</h3>
-    <p>
-      The `div` element is a block element, so each `div` will show up on a new line.
-    </p>
-    <div>1st div</div>
-    <div>2nd div</div>
-    <div>3nd div</div>
-    <h3>`span`</h3>
-    <p>
-      The `span` element is an inline element, so there will be no line break between each `span`.
-    </p>
-    <span>1st span</span>
-    <span>2nd span</span>
-    <span>3rd span</span>
-    <div></div>
-
-    <h2 id="br">Breaking text using the `br` tag</h2>
-    <p>
-      Replace with Haiku line 1 (5 syllables)<br>
-      Replace with Haiku line 2 (7 syllables)<br>
-      Replace with Haiku line 3 (5 syllables)<br>
-    </p>
-
-    <a href="#top-of-the-page">Jump to the top of the page</a>
-
+    <div class="flexed">
+      <h2 id="br">Breaking text using the `br` tag, Coding Haiku</h2>
+      <p>
+        Coding will free you<br>
+        Don't forget your origins<br>
+        Acquire freedom<br>
+      </p>
+    </div>
+    </div>
+    <header>
+      <img src="./logo.png" class="logo" alt="logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="./js.html">Javascript Cheat Sheet</a></li>
+          <li><a href="./cssCheatsheet.html">CSS Cheat Sheet</a></li>
+          <li><a href="./cl.html">Command Line Cheat Sheet</a></li>
+          <li><a href="./github.html">Github Cheat Sheet</a></li>
+          <li><a href="#top-of-the-page">Jump to the top of the page</a></li>
+          <a class="cta" href="#"><button>Contact Me</button></a>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>
