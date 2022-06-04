@@ -31,13 +31,50 @@
     <h2 class="center">Table of Contents</h2>
     <div class="center">
       <ul class="nav_links">
-
+        <li><a href="#variedCommands">Varied Commands</a></li>
+        <li><a href="#branches">Branches</a></li>
+        <li><a href="#update">Update from the remote repository</a></li>
+        <li><a href="#undo">Undo local changes</a></li>
       </ul>
     </div>
   </div>
 
   <div class="container">
+  <div class="subsection">
+    <h2 id="variedCommands">Varied Commands</h2>
+    <h2>Create a new local repository :</h2><h3> git init</h3>
+    <h2>Create a working copy of a local repository:</h2><h3>git clone /path/to/repository</h3>
+    <h2>Add files:</h2><h3>git add filename</h3>
+    <h2>Commit changes to head (but not yet to the remote repository):</h2><h3>git commit -m "Commit message"</h3>
+    <h2>Send changes to the master branch of your remote repository:</h2><h3>git push origin master</h3>
+    <h2>List the files you've changed and those you still need to add or commit:</h2><h3>git status</h3>
+    <h2>If you haven't connected your local repository to a remote server, add the server to be able to push to it:</h2><h3>git remote add origin "server"</h3>
+   </div>
+    <div class="subsection">
+    <h2 id="branches">Branches</h2>
+    <h2>Create a new branch and switch to it:</h2><h3>git checkout -b "branchname"</h3>
+    <h2>Switch from one branch to another:</h2><h3>git checkout "branchname"</h3>
+    <h2>List all the branches in your repo, and also tell you what branch you're currently in:</h2><h3>git branch</h3>
+    <h2>Push the branch to your remote repository, so others can use it:</h2><h3>git push origin "branchname"</h3>
+    <h2>Push all branches to your remote repository:</h2><h3>git push --all origin</h3>
+    <h2>Delete a branch on your remote repository:</h2><h3>git push origin :"branchname"</h3>
+    </div>
+    <div class="subsection">
+    <h2 id="update">Update from the remote repository</h2>
+    <h2>Fetch and merge changes on the remote server to your working directory:</h2><h3>git pull</h3>
+    <h2>To merge a different branch into your active branch:</h2><h3>git merge "branchname"</h3>
+    <h2>After you have manually resolved any conflicts, you mark the changed file:</h2><h3>git add "filename"</h3>
+    <h2>View all the merge conflicts:</h2><h3>git diff</h3>
+    </div>
+    <div class="subsection">
+      <h2 id="undo">Undo local changes</h2>
+    <h2>If you mess up, you can replace the changes in your working tree with the last content in head:</h2><h3>git checkout -- "filename"</h3>
+    <h2>Instead, to drop all your local changes and commits, fetch the latest
+      history from the server and point your local
+    master branch at it, do this:</h2><h3>git fetch origin</h3><h3>git reset --hard origin/master</h3>
+    </div>
 
+   </div>
   </div>
   <header>
     <img src="./logo.png" class="logo" alt="logo">
