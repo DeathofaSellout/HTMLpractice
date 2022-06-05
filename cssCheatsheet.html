@@ -23,10 +23,26 @@
     <a class="cta" href="#"><button>Contact Me</button></a>
   </header>
 
-  <h1 class="center" id="top-of-the-page">Death of a Sellout's CSS Cheat Sheet</h1>
+  <div>
+    <h1 class="center" id="top-of-the-page">Death of a Sellout's CSS Cheat Sheet</h1>
+    <h2 class="center">Table of Contents</h2>
+    <div class="center">
+      <ul class="nav_links">
+        <li><a href="#selectors">CSS Selectors</a></li>
+        <li><a href="#multiple">Multiple Selectors</a></li>
+        <li><a href="#comb">Combinators</a></li>
+        <li><a href="#examples">Examples of Each Selector</a></li>
+        <li><a href="#psuedo">Pseudo Classes</a></li>
+        <li><a href="#psuedo2">Pseudo Selector</a></li>
+        <li><a href="#flexbox">Flexbox</a></li>
+        <li><a href="#grid">Grid</a></li>
+      </ul>
+    </div>
+  </div>
+
 <div class="container">
   <div class="flexed">
-  <h2>CSS Selectors</h2>
+  <h2 id="selectors">CSS Selectors</h2>
   <ol>
     <h3>Type selectors</h3>
     <p>matches elements by node name <br> div, li, a, p</p>
@@ -48,7 +64,7 @@
   </ol>
  </div>
  <div class="flexed">
-   <h2>Multiple Selectors</h2>
+   <h2 id="multiple">Multiple Selectors</h2>
    <h3>Same style: multiple elements</h3>
    <p>h1,
   h2 {
@@ -60,42 +76,78 @@
   }</p>
  </div>
 
- <h2>Combinators</h2>
+<div class="flexed">
+ <h2 id="comb">Combinators</h2>
   <h3>Descendant selectors</h3>
+  <p>Two selectors with just white space in between them.</p>
+  <p>p abbr {
+  text-transform: uppercase;
+  }</p>
+  <h3>Direct child selector</h3>
+  <p>Selects only the direct children of an element.</p>
+  <p>.menu > .is-active {
+  background-color: #ffe0b2;
+  }</p>
+  <h3>Adjacent sibling selectors</h3>
+  <p>First and Second element are styled.</p>
+  <p>h1 + h2 {
+  font-style: italic;
+  }
+</p>
+</div>
 
+<div class="flexed">
+  <h2 id="psuedo">Pseudo Classes</h2>
+  <p>Specifies a special state of the selected element.</p>
+  <p>a:hover {}</p>
+</div>
 
+<div class="flexed">
+  <h2 id="psuedo2">Pseudo Selectors</h2>
+  <p>Pseudo-selectors select pseudo elements in the DOM. The two that you will use
+  most often are the ::after and the ::before pseudo-selectors. Both of them create a pseudo-element as a child of the
+  element to which the property applies. The ::after variation creates the child as the last child of the selected
+  element. The ::before variation creates the child as the first child of the selected element. You can do neat things
+  with that. For example, if you can put happy faces at the beginning of all paragraphs. </p>
+  <p>p::before {}</p>
+</div>
 
+<div class="flexed">
+  <h2 id="examples">Examples of Each Selector</h2>
+   <h3>Type selector</h3>
+   <p>background-color: {background-color: #000000;}</p>
 
-  <h2>Examples of Each Selector</h2>
-  <!-- <div>/* Type selector */</div>
-  <div>div {</div>
-  <div>background-color: #000000;</div>
-  <div>}</div>
+   <h3>Class selector  </h3>
+   <p>.active {color: #ffffff;}</p>
 
-  <div>/* Class selector */</div>
-  <div>.active {</div>
-  <div>color: #ffffff;</div>
-  <div>}</div>
+   <h3> ID selector </h3>
+   <p>#list { border: 1px solid gray; }</p>
 
-  <div>/* ID selector */</div>
-  <div>#list-1 {</div>
-  <div>border: 1px solid gray;</div>
-  <div>}</div>
+  <h3> Universal selector </h3>
+  <p>* { padding: 10px; }</p>
 
-  <div>/* Universal selector */</div>
-  <div>* {</div>
-  <div>padding: 10px;</div>
-  <div>}</div>
+  <h3> Attribute selector </h3>
+  <p>a[title] { font-size: 2em; }</p>
+</div>
 
-  <div>/* Attribute selector */</div>
-  <div>a[title] {</div>
-  <div>font-size: 2em;</div>
-  <div>}</div> -->
+<div class="flexed">
+  <h2 id="flexbox">Flexbox</h2>
+  <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="nav_links">Complete Guide to Flexbox</a></li>
+</div>
 
+<div class="flexed">
+  <h2 id="grid">Grid</h2>
+  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="nav_links">Complete Guide to Grid</a></li>
+</div>
 
-
-
-
+<div class="flexed">
+  <h2 id="specificity">Specificity</h2>
+  <ul><h3>The four number calculation, in increasing order of importance</h3>
+    <li>the number of tag selectors in the selector</li>
+    <li>the number of class, pseudo-element, and attribute selectors in the selector</li>
+    <li>the number of id selectors in the selector</li>
+    <li>is this an inline style</li>
+  </ul>
 </div>
 
 <header>
@@ -113,3 +165,19 @@
 </header>
 </body>
 </html>
+
+<!--
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p>
+<h3></h3>
+<p></p> -->

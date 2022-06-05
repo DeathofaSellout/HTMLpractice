@@ -42,7 +42,9 @@ nav {
 .nav_links li a:hover {
   color: red;
 }
-
+a[href^="https"]:hover {
+  color: red;
+}
 body {
   background-color: black;
   color: white;
@@ -97,6 +99,9 @@ button:hover {
   border-radius: 5px;
   padding: 20px 10%;
   margin: 10px;
+}
+.white h3 {
+  color: whitesmoke;
 }
 .logo {
   margin: 10px;
