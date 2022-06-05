@@ -59,7 +59,13 @@ h2 {
 h3 {
   color:aqua;
 }
-
+p, ul, ol {
+  font-size: 20px;
+}
+ul, ol {
+  text-align: center;
+  list-style-position: inside;
+}
 button {
   padding: 9px 25px;
   background-color: rgba(255,0,0,1);
@@ -74,6 +80,7 @@ button:hover {
 }
 .center {
   text-align: center;
+  list-style-position: inside;
 }
 .container {
   padding: 30px 10%;
