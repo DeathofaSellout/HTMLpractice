@@ -88,8 +88,13 @@ button:hover {
   padding: 30px 10%;
 }
 .flexed {
-  /* border: 2px solid red; */
   border: 2px solid aqua;
+  border-radius: 5px;
+  padding: 20px 10%;
+  margin: 10px;
+}
+.box {
+  border: 2px solid red;
   border-radius: 5px;
   padding: 20px 10%;
   margin: 10px;

@@ -36,6 +36,8 @@
         <li><a href="#psuedo2">Pseudo Selector</a></li>
         <li><a href="#flexbox">Flexbox</a></li>
         <li><a href="#grid">Grid</a></li>
+        <li><a href="#specificity">Specificity</a></li>
+        <li><a href="#box">Box Model</a></li>
       </ul>
     </div>
   </div>
@@ -148,6 +150,58 @@
     <li>the number of id selectors in the selector</li>
     <li>is this an inline style</li>
   </ul>
+</div>
+
+<div class="flexed">
+  <h2>Box Model</h2>
+  <h3>Properties:</h3>
+  <p>Width, Height, Margin, Border, Padding</p>
+  <h2>display: block;</h2>
+  <p>Each new box appears on a new line/row. All properties are respected.</p>
+  <h2>display: inline;</h2>
+  <li>Each box appears next to each other in a single line until it fills up the available space.</li>
+  <li>Width and height don't apply.</li>
+  <li>The padding, margin and border of a box are applied, but they don't push other inline boxes away from the box.</li>
+
+  <h2>Standard Box Model vs. border-box</h2>
+  <h3>Standard Box Model</h3>
+  <p>In the standard Box Model, the width and height of an element set with CSS refers to the width and height of the box's
+  content. Any padding, border and margin added to the element will get added to the total size of actual box. If padding,
+  border or margin are removed from a box, the box size decreases, but the width and height of the content stays the same.</p>
+  <h3>border-box</h3>
+  <p>Set the width and height of an element to include the padding and border. In CSS version 3, the box-sizing property was added to the CSS specification which allows you to set it to
+  the values "content-box" (which is how it is by default) or "border-box".
+  Setting the box-sizing property to border-box includes the width of the left border, right border, left padding, and
+  right padding in the overall width, and the top border, bottom border, top padding, and bottom padding in the overall
+  calculation of the height.
+  </p>
+ <h3>inline-block</h3>
+ <p>Elements are laid out left to right.
+  The layout takes into account width and height properties.
+  Don't have to resort to the float hack.
+ </p>
+ <h3>Padding</h3>
+ <p>padding: top right bottom left;</p>
+<h3>Border</h3>
+<p>border: 3px solid #000000;</p>
+<p>border-width, border-style, and border-color</p>
+<h3>Margin</h3>
+<p>margin: 10% 20px 10px 5%;</p>
+<p>margin: top right bottom left;</p>
+
+
+
+
+  <div class="box">
+    <h3>Margin</h3>
+    <div class="flexed">
+      <h4>Border</h4>
+        <div class="box">Padding
+         <h5 class="flexed">Box</h5>
+        </div>
+    </div>
+  </h2>
+  </div>
 </div>
 
 <header>
