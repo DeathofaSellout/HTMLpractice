@@ -39,6 +39,8 @@
       <li><a href="#specificity">Specificity</a></li>
       <li><a href="#box">Box Model</a></li>
       <li><a href="#position">CSS Positioning</a></li>
+      <li><a href="#trans">CSS Transition</a></li>
+      <li><a href="#ani">CSS Animation</a></li>
     </ul>
   </div>
 </div>
@@ -331,7 +333,55 @@
     in mind.</p>
 
   </div>
+  <div class="flexed">
+    <h2 id="trans">CSS Transition</h2>
+    <h3>Sub Properties</h3>
+    <h3>transition-property</h3>
+    <li>Specifies the name or names of the CSS
+      properties to which transitions should be applied.</li>
+    <h3>transition-duration</h3>
+    <li>Specifies the duration over which
+      transitions should occur. You can specify a single duration that
+      applies to all properties during the transition, or multiple
+      values to allow each property to transition over a different period of
+      time.</li>
+    <h3>transition-delay</h3>
+    <li>Defines how long to wait between the time a
+      property is changed and the transition actually begins.</li>
+      <div class="space"></div>
+      <h3>Example:</h3>
+    <p>#delay {<br>
+      font-size: 14px; <br>
+      transition-property: font-size;<br>
+      transition-duration: 4s;<br>
+      transition-delay: 2s;
+      }<br>
 
+      #delay:hover {<br>
+      font-size: 36px;
+      }<br>
+    </p>
+    </div>
+    <div class="flexed">
+     <h2 id="ani">CSS Animation</h2>
+     <p>CSS animations are just like transitions but they have their own properties.</p>
+    <h3>Example</h3>
+    <p>@keyframes example {<br>
+    from {background-color: red;}<br>
+    to {background-color: yellow;}<br>
+    }<br>
+
+    div {<br>
+    width: 100px;<br>
+    height: 100px;<br>
+    background-color: red;<br>
+    animation-name: example;<br>
+    animation-duration: 4s;<br>
+    }</p>
+
+    </div>
+
+  </div>
   <header>
     <img src="./logo.png" class="logo" alt="logo">
     <nav>
