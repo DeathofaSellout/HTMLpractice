@@ -1,221 +1,350 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <meta>
-  <title>CSS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta>
+<title>CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-  </head>
-  <header>
-    <img src="./logo.png" class="logo" alt="logo">
-    <nav>
-      <ul class="nav_links">
-        <li><a href="./index.html">HTML Cheat Sheet</a></li>
-        <li><a href="./js.html">Javascript Cheat Sheet</a></li>
-        <li><a href="./cl.html">Command Line Cheat Sheet</a></li>
-        <li><a href="./github.html">Github Cheat Sheet</a></li>
-      </ul>
-    </nav>
-    <a class="cta" href="https://deathofasellout.github.io" target="_blank"><button>Contact Me</button></a>
-  </header>
-
-  <div>
-    <h1 class="center" id="top-of-the-page">Death of a Sellout's CSS Cheat Sheet</h1>
-    <h2 class="center">Table of Contents</h2>
-    <div class="center">
-      <ul class="nav_links">
-        <li><a href="#selectors">CSS Selectors</a></li>
-        <li><a href="#multiple">Multiple Selectors</a></li>
-        <li><a href="#comb">Combinators</a></li>
-        <li><a href="#examples">Examples of Each Selector</a></li>
-        <li><a href="#psuedo">Pseudo Classes</a></li>
-        <li><a href="#psuedo2">Pseudo Selector</a></li>
-        <li><a href="#flexbox">Flexbox</a></li>
-        <li><a href="#grid">Grid</a></li>
-        <li><a href="#specificity">Specificity</a></li>
-        <li><a href="#box">Box Model</a></li>
-      </ul>
-    </div>
-  </div>
-
-<div class="container">
-  <div class="flexed">
-  <h2 id="selectors">CSS Selectors</h2>
-  <ol>
-    <h3>Type selectors</h3>
-    <p>matches elements by node name <br> div, li, a, p</p>
-    <h3>Class selectors</h3>
-    <p>matches elements by class name <br>button class=“active”</p>
-    <p>
-      <h3>Compound class selectors</h3>
-    You can have elements in your HTML that have more than one
-    class applied to them. <br>
-    Div element with two classes.<br>
-    div class="box yellow"</p>
-    <h3>ID selectors</h3>
-    <p>matches elements by ID name (e.g. div id=”list-1”)</p>
-    <h3>Universal selectors</h3>
-    <p>matches elements of any type (e.g. *)</p>
-    <h3>Attribute selectors</h3>
-    <p>matches elements based on the presence or value of
-    a given attribute (e.g. a[title] matches all a elements with a title attribute)</p>
-  </ol>
- </div>
- <div class="flexed">
-   <h2 id="multiple">Multiple Selectors</h2>
-   <h3>Same style: multiple elements</h3>
-   <p>h1,
-  h2 {
-  font-style: italic;
-  }</p>
-  <p>h1#heading,
-  h2.subheading {
-  font-style: italic;
-  }</p>
- </div>
-
-<div class="flexed">
- <h2 id="comb">Combinators</h2>
-  <h3>Descendant selectors</h3>
-  <p>Two selectors with just white space in between them.</p>
-  <p>p abbr {
-  text-transform: uppercase;
-  }</p>
-  <h3>Direct child selector</h3>
-  <p>Selects only the direct children of an element.</p>
-  <p>.menu > .is-active {
-  background-color: #ffe0b2;
-  }</p>
-  <h3>Adjacent sibling selectors</h3>
-  <p>First and Second element are styled.</p>
-  <p>h1 + h2 {
-  font-style: italic;
-  }
-</p>
-</div>
-
-<div class="flexed">
-  <h2 id="psuedo">Pseudo Classes</h2>
-  <p>Specifies a special state of the selected element.</p>
-  <p>a:hover {}</p>
-</div>
-
-<div class="flexed">
-  <h2 id="psuedo2">Pseudo Selectors</h2>
-  <p>Pseudo-selectors select pseudo elements in the DOM. The two that you will use
-  most often are the ::after and the ::before pseudo-selectors. Both of them create a pseudo-element as a child of the
-  element to which the property applies. The ::after variation creates the child as the last child of the selected
-  element. The ::before variation creates the child as the first child of the selected element. You can do neat things
-  with that. For example, if you can put happy faces at the beginning of all paragraphs. </p>
-  <p>p::before {}</p>
-</div>
-
-<div class="flexed">
-  <h2 id="examples">Examples of Each Selector</h2>
-   <h3>Type selector</h3>
-   <p>background-color: {background-color: #000000;}</p>
-
-   <h3>Class selector  </h3>
-   <p>.active {color: #ffffff;}</p>
-
-   <h3> ID selector </h3>
-   <p>#list { border: 1px solid gray; }</p>
-
-  <h3> Universal selector </h3>
-  <p>* { padding: 10px; }</p>
-
-  <h3> Attribute selector </h3>
-  <p>a[title] { font-size: 2em; }</p>
-</div>
-
-<div class="flexed">
-  <h2 id="flexbox">Flexbox</h2>
-  <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="nav_links">Complete Guide to Flexbox</a></li>
-</div>
-
-<div class="flexed">
-  <h2 id="grid">Grid</h2>
-  <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="nav_links">Complete Guide to Grid</a></li>
-</div>
-
-<div class="flexed">
-  <h2 id="specificity">Specificity</h2>
-  <ul><h3>The four number calculation, in increasing order of importance</h3>
-    <li>the number of tag selectors in the selector</li>
-    <li>the number of class, pseudo-element, and attribute selectors in the selector</li>
-    <li>the number of id selectors in the selector</li>
-    <li>is this an inline style</li>
-  </ul>
-</div>
-
-<div class="flexed">
-  <h2>Box Model</h2>
-  <h3>Properties:</h3>
-  <p>Width, Height, Margin, Border, Padding</p>
-  <h2>display: block;</h2>
-  <p>Each new box appears on a new line/row. All properties are respected.</p>
-  <h2>display: inline;</h2>
-  <li>Each box appears next to each other in a single line until it fills up the available space.</li>
-  <li>Width and height don't apply.</li>
-  <li>The padding, margin and border of a box are applied, but they don't push other inline boxes away from the box.</li>
-
-  <h2>Standard Box Model vs. border-box</h2>
-  <h3>Standard Box Model</h3>
-  <p>In the standard Box Model, the width and height of an element set with CSS refers to the width and height of the box's
-  content. Any padding, border and margin added to the element will get added to the total size of actual box. If padding,
-  border or margin are removed from a box, the box size decreases, but the width and height of the content stays the same.</p>
-  <h3>border-box</h3>
-  <p>Set the width and height of an element to include the padding and border. In CSS version 3, the box-sizing property was added to the CSS specification which allows you to set it to
-  the values "content-box" (which is how it is by default) or "border-box".
-  Setting the box-sizing property to border-box includes the width of the left border, right border, left padding, and
-  right padding in the overall width, and the top border, bottom border, top padding, and bottom padding in the overall
-  calculation of the height.
-  </p>
- <h3>inline-block</h3>
- <p>Elements are laid out left to right.
-  The layout takes into account width and height properties.
-  Don't have to resort to the float hack.
- </p>
- <h3>Padding</h3>
- <p>padding: top right bottom left;</p>
-<h3>Border</h3>
-<p>border: 3px solid #000000;</p>
-<p>border-width, border-style, and border-color</p>
-<h3>Margin</h3>
-<p>margin: 10% 20px 10px 5%;</p>
-<p>margin: top right bottom left;</p>
-
-
-
-
-  <div class="box">
-    <h3>Margin</h3>
-    <div class="flexed">
-      <h4>Border</h4>
-        <div class="box">Padding
-         <h5 class="flexed">Box</h5>
-        </div>
-    </div>
-  </h2>
-  </div>
-</div>
-
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
 <header>
   <img src="./logo.png" class="logo" alt="logo">
   <nav>
     <ul class="nav_links">
       <li><a href="./index.html">HTML Cheat Sheet</a></li>
-      <li><a href="./js.html">Javascript Cheat Sheet</a></li>
+      <!-- <li><a href="./js.html">Javascript Cheat Sheet</a></li> -->
       <li><a href="./cl.html">Command Line Cheat Sheet</a></li>
       <li><a href="./github.html">Github Cheat Sheet</a></li>
-      <li><a href="#top-of-the-page">Jump to the top of the page</a></li>
-
     </ul>
   </nav>
+  <a class="cta" href="https://deathofasellout.github.io" target="_blank"><button>Contact Me</button></a>
 </header>
-</body>
+
+<div>
+  <h1 class="center" id="top-of-the-page">Death of a Sellout's CSS Cheat Sheet</h1>
+  <h2 class="center">Table of Contents</h2>
+  <div class="center">
+    <ul class="nav_links">
+      <li><a href="#selectors">CSS Selectors</a></li>
+      <li><a href="#multiple">Multiple Selectors</a></li>
+      <li><a href="#comb">Combinators</a></li>
+      <li><a href="#examples">Examples of Each Selector</a></li>
+      <li><a href="#psuedo">Pseudo Classes</a></li>
+      <li><a href="#psuedo2">Pseudo Selector</a></li>
+      <li><a href="#flexbox">Flexbox</a></li>
+      <li><a href="#grid">Grid</a></li>
+      <li><a href="#specificity">Specificity</a></li>
+      <li><a href="#box">Box Model</a></li>
+      <li><a href="#position">CSS Positioning</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="flexed">
+    <h2 id="selectors">CSS Selectors</h2>
+    <ol>
+      <h3>Type selectors</h3>
+      <p>matches elements by node name <br> div, li, a, p</p>
+      <h3>Class selectors</h3>
+      <p>matches elements by class name <br>button class=“active”</p>
+      <p>
+      <h3>Compound class selectors</h3>
+      You can have elements in your HTML that have more than one
+      class applied to them. <br>
+      Div element with two classes.<br>
+      div class="box yellow"</p>
+      <h3>ID selectors</h3>
+      <p>matches elements by ID name (e.g. div id=”list-1”)</p>
+      <h3>Universal selectors</h3>
+      <p>matches elements of any type (e.g. *)</p>
+      <h3>Attribute selectors</h3>
+      <p>matches elements based on the presence or value of
+        a given attribute (e.g. a[title] matches all a elements with a title attribute)</p>
+    </ol>
+  </div>
+  <div class="flexed">
+    <h2 id="multiple">Multiple Selectors</h2>
+    <h3>Same style: multiple elements</h3>
+    <p>h1,
+      h2 {
+      font-style: italic;
+      }</p>
+    <p>h1#heading,
+      h2.subheading {
+      font-style: italic;
+      }</p>
+  </div>
+
+  <div class="flexed">
+    <h2 id="comb">Combinators</h2>
+    <h3>Descendant selectors</h3>
+    <p>Two selectors with just white space in between them.</p>
+    <p>p abbr {
+      text-transform: uppercase;
+      }</p>
+    <h3>Direct child selector</h3>
+    <p>Selects only the direct children of an element.</p>
+    <p>.menu > .is-active {
+      background-color: #ffe0b2;
+      }</p>
+    <h3>Adjacent sibling selectors</h3>
+    <p>First and Second element are styled.</p>
+    <p>h1 + h2 {
+      font-style: italic;
+      }
+    </p>
+  </div>
+
+  <div class="flexed">
+    <h2 id="psuedo">Pseudo Classes</h2>
+    <p>Specifies a special state of the selected element.</p>
+    <p>a:hover {}</p>
+  </div>
+
+  <div class="flexed">
+    <h2 id="psuedo2">Pseudo Selectors</h2>
+    <p>Pseudo-selectors select pseudo elements in the DOM. The two that you will use
+      most often are the ::after and the ::before pseudo-selectors. Both of them create a pseudo-element as a child of
+      the
+      element to which the property applies. The ::after variation creates the child as the last child of the selected
+      element. The ::before variation creates the child as the first child of the selected element. You can do neat
+      things
+      with that. For example, if you can put happy faces at the beginning of all paragraphs. </p>
+    <p>p::before {}</p>
+  </div>
+
+  <div class="flexed">
+    <h2 id="examples">Examples of Each Selector</h2>
+    <h3>Type selector</h3>
+    <p>background-color: {background-color: #000000;}</p>
+
+    <h3>Class selector </h3>
+    <p>.active {color: #ffffff;}</p>
+
+    <h3> ID selector </h3>
+    <p>#list { border: 1px solid gray; }</p>
+
+    <h3> Universal selector </h3>
+    <p>* { padding: 10px; }</p>
+
+    <h3> Attribute selector </h3>
+    <p>a[title] { font-size: 2em; }</p>
+  </div>
+
+  <div class="flexed">
+    <h2 id="flexbox">Flexbox</h2>
+    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="nav_links">Complete
+        Guide to Flexbox</a></li>
+        <h2>display: flex;</h2>
+        <img id="gridImg" src="./grid.png" alt="grid">
+    <h3>Justify-content positions a container's items along the main axis and accepts
+    the following values:</h3>
+
+    <li>flex-start: group items at the start of a container's main axis</li>
+    <li>flex-end: group items at the end of the main axis</li>
+    <li>center: group items in the center of the main axis</li>
+    <li>space-between: evenly distribute items along the main axis such that the
+      first item aligns at the start and the final item aligns at the end</li>
+    <li>space-around: evenly distribute items along the main axis such that all items have equal space around them</li>
+
+    <h3>align-items positions a container's items across its cross axis and
+      accepts the following values:</h3>
+      <li>flex-start: align items across the start of a container's cross axis</li>
+      <li>flex-end: align items across the end of the cross axis</li>
+      <li>center: align items across the center of the cross axis</li>
+      <li>baseline: align items such that their baselines line up</li>
+      <li>stretch: stretch items such that they span the entire cross axis</li>
+      <div class="space"></div>
+      <h3>Flex Direction</h3>
+      <img id="gridImg" src="./grid2.png" alt="grid">
+      <li>row: lay out the main axis from left to right</li>
+      <li>row-reverse: lay out the main axis from right to left</li>
+      <li>column: lay out the main axis from top to bottom</li>
+      <li>column-reverse: lay out the main axis from bottom to top</li>
+
+     <h3>order</h3>
+     <p>defines the order in which an item appears in the flex container
+       and accepts both positive and negative integer values. All flex
+       items begin with a default order of 0, so an item with an order
+       greater than 0 will be repositioned relative to items still set
+       to their default orders.</p>
+       <li>#: position an item relative to the other items in the container</li>
+
+      <h3>align-self</h3>
+      <li>flex-start: align item at the start of a container's cross axis</li>
+      <li>flex-end: align item at the end of the cross axis</li>
+      <li>center: align item at the center of the cross axis</li>
+      <li>accepts the values baseline and stretch</li>
+
+      <h3>flex wrap</h3>
+      <p>Specifies whether flex items are forced on a single line or can be
+        wrapped on multiple lines.</p>
+      <li>nowrap</li>
+      <li>wrap</li>
+      <li>wrap-reverse</li>
+      <h3>flex flow</h3>
+      <p>Shorthand property for flex-direction and flex-wrap.</p>
+      <li>flex-direction flex-wrap</li>
+
+  </div>
+
+  <div class="flexed">
+    <h2 id="grid">Grid</h2>
+    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="nav_links">Complete
+        Guide to Grid</a></li>
+        <h2>display: grid;</h2>
+        <h3>grid-template</h3>
+        <p>shorthand property that combines grid-template-rows and
+          grid-template-columns.</p>
+          <p>grid-template: 50% 50% / 200px; will create a grid with two rows
+            that are 50% each, and one column that is 200 pixels
+          wide.</p>
+        <h3>grid-template-columns: 20% 20% 20% 20% 20%;</h3>
+        <h3>grid-template-columns: repeat(5, 20%);</h3>
+        <p>Each rule has five values which create five columns</p>
+        <p>Use pixels, ems, percent, fractional (fr)</p>
+        <h3>grid-template-rows: 20% 20% 20% 20% 20%;</h3>
+        <h3>grid-template-rows: repeat(5, 20%);</h3>
+        <p>Each rule has five values which create five rows</p>
+        <p>Use pixels, ems, percent, fractional (fr)</p>
+        <h3>grid-column-start</h3>
+        <li>Specifies a grid item's start position in the columns</li>
+        <li>span 2; //item spans 2 relative to end position</li>
+        <h3>grid-column-end</h3>
+        <li>Specifies a grid item's end position in the columns</li>
+        <li>span 2; //item spans 2</li>
+        <h3>grid-column</h3>
+        <li>combines start and end, grid-column: 2/3;</li>
+        <li>span works with grid column, 2/span 3</li>
+        <h3>grid-row-start</h3>
+        <li>which row to start</li>
+        <h3>grid-row</h3>
+        <li>combines start and end, grid-row: 2/3;</li>
+        <h3>grid-area</h3>
+        <li>accepts four values separated by slashes: grid-row-start,
+          grid-column-start, grid-row-end, followed by grid-column-end.</li>
+        <li>grid-area: 1 / 2 / 4/ 6;</li>
+        <h3>order</h3>
+        <li>specifies order of the grid item</li>
+
+
+
+  </div>
+
+  <div class="flexed">
+    <h2 id="specificity">Specificity</h2>
+    <ul>
+      <h3>The four number calculation, in increasing order of importance</h3>
+      <li>the number of tag selectors in the selector</li>
+      <li>the number of class, pseudo-element, and attribute selectors in the selector</li>
+      <li>the number of id selectors in the selector</li>
+      <li>is this an inline style</li>
+    </ul>
+  </div>
+
+  <div class="flexed">
+    <h2>Box Model</h2>
+    <h3>Properties:</h3>
+    <p>Width, Height, Margin, Border, Padding</p>
+    <h2>display: block;</h2>
+    <p>Each new box appears on a new line/row. All properties are respected.</p>
+    <h2>display: inline;</h2>
+    <li>Each box appears next to each other in a single line until it fills up the available space.</li>
+    <li>Width and height don't apply.</li>
+    <li>The padding, margin and border of a box are applied, but they don't push other inline boxes away from the box.
+    </li>
+
+    <h2>Standard Box Model vs. border-box</h2>
+    <h3>Standard Box Model</h3>
+    <p>In the standard Box Model, the width and height of an element set with CSS refers to the width and height of the
+      box's
+      content. Any padding, border and margin added to the element will get added to the total size of actual box. If
+      padding,
+      border or margin are removed from a box, the box size decreases, but the width and height of the content stays the
+      same.</p>
+    <h3>border-box</h3>
+    <p>Set the width and height of an element to include the padding and border. In CSS version 3, the box-sizing
+      property was added to the CSS specification which allows you to set it to
+      the values "content-box" (which is how it is by default) or "border-box".
+      Setting the box-sizing property to border-box includes the width of the left border, right border, left padding,
+      and
+      right padding in the overall width, and the top border, bottom border, top padding, and bottom padding in the
+      overall
+      calculation of the height.
+    </p>
+    <h3>inline-block</h3>
+    <p>Elements are laid out left to right.
+      The layout takes into account width and height properties.
+      Don't have to resort to the float hack.
+    </p>
+    <h3>Padding</h3>
+    <p>padding: top right bottom left;</p>
+    <h3>Border</h3>
+    <p>border: 3px solid #000000;</p>
+    <p>border-width, border-style, and border-color</p>
+    <h3>Margin</h3>
+    <p>margin: 10% 20px 10px 5%;</p>
+    <p>margin: top right bottom left;</p>
+
+    <div class="box">
+      <h3>Margin</h3>
+      <div class="flexed">
+        <h4>Border</h4>
+        <div class="box">Padding
+          <h5 class="flexed">Box</h5>
+        </div>
+      </div>
+      </h2>
+    </div>
+  </div>
+  <div class="flexed">
+    <h2 id="position">CSS Positioning</h2>
+    <h3>Position and it's five properties</h3>
+    <p>Static, Relative, Absolute, Fixed, and Sticky</p>
+    <p>Top, right, left and bottom properties are all optional, except in the
+      case of a sticky element, which requires at least
+     one of the four properties to be set.
+    </p>
+    <h3>Relative positioning</h3>
+    <p>Normal position. Can be offset from that position using the top, right, bottom and left. </p>
+    <h3>Absolute positioning</h3>
+    <p>An absolutely positioned element is removed from the page flow, and other elements around it act like it’s not there.
+      The element is positioned in relation to its closest positioned ancestor, or, if one cannot be found, to the html
+      document. It can be offset from that position using the top, right, bottom and left properties.</p>
+    <h3>Fixed positioning</h3>
+    <p>A fixed element is removed from the page flow, like an absolutely positioned element. However, unlike an absolutely
+    positioned element, a fixed element’s position is relative to the html document itself and not to an ancestor element.
+    It is positioned using the top, right, bottom and left properties.</p>
+    <h3>Sticky positioning</h3>
+    <p>A sticky element remains in its original position in the page flow, and it is positioned relative to its closest
+    block-level ancestor and any scrolling ancestors (created when overflow is hidden, scroll, auto, or overlay). It behaves
+    like a relatively positioned element until the point at which you would normally scroll past it in the viewport. At that
+    scrolling point, the element “sticks” to the page wherever it has been positioned by the top, left, bottom and right
+    properties.</p>
+    <p>Note: Like fixed positioning, sticky positioning can be useful for things like nav bars, buttons, links, videos, etc.
+    that we want to keep visible as the user scrolls. One use-case would be keeping a section or menu heading at the top of
+    the page until the user scrolls past that section into a new one. Again, use with caution, and always keep accessibility
+    in mind.</p>
+
+  </div>
+
+  <header>
+    <img src="./logo.png" class="logo" alt="logo">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="./index.html">HTML Cheat Sheet</a></li>
+        <!-- <li><a href="./js.html">Javascript Cheat Sheet</a></li> -->
+        <li><a href="./cl.html">Command Line Cheat Sheet</a></li>
+        <li><a href="./github.html">Github Cheat Sheet</a></li>
+        <li><a href="#top-of-the-page">Jump to the top of the page</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  </body>
+
 </html>
