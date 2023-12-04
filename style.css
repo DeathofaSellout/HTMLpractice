@@ -105,6 +105,12 @@ button:hover {
   padding: 20px 10%;
   margin: 10px;
 }
+.left{
+  grid-column-start: 1;
+}
+.right{
+  grid-column-start: 2;
+}
 .white h3 {
   color: whitesmoke;
 }
