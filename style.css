@@ -56,13 +56,13 @@ h1 {
   margin-left: 20px;
 }
 h2 {
-  float: left;
   color: red;
 }
 p {
   float: right;
 }
 h3 {
+  float: left;
   color:aqua;
 }
 p, ul, ol {
