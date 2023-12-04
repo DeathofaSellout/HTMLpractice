@@ -58,11 +58,7 @@ h1 {
 h2 {
   color: red;
 }
-p {
-  float: right;
-}
 h3 {
-  float: left;
   color:aqua;
 }
 p, ul, ol {
