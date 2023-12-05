@@ -24,7 +24,7 @@
 </header>
 
 <div>
-  <h1 class="center" id="top-of-the-page">Death of a Sellout's CSS Cheat Sheet</h1>
+  <h1 class="center" id="top-of-the-page"><u>Death of a Sellout's CSS Cheat Sheet</u></h1>
   <h2 class="center">Table of Contents</h2>
   <div class="center">
     <ul class="nav_links">
@@ -49,9 +49,9 @@
   <h2 id="selectors">CSS Selectors</h2>
   <div class="subsection">
       <h3 class="left">Type selectors</h3>
-      <p class="right">matches elements by node name <br> div, li, a, p</p>
+      <p class="right">matches elements by node name </p><p class="right" style="color:yellow"> div, li, a, p</p>
       <h3 class="left">Class selectors</h3>
-      <p class="right">matches elements by class name <br>button class=“active”</p>
+      <p class="right">matches elements by class name </p><p class="right" style="color:yellow">button class=“active”</p>
       <p class="right">
       <h3 class="left">Compound class selectors</h3>
       <p class="right">You can have elements in your HTML that have more than one
@@ -130,58 +130,59 @@
       the Complete
       Guide to Flexbox</a></li>
       <img id="gridImg" src="./grid.png" alt="grid">
+  <h2>display: flex;</h2>
   <div class="subsection">
-    <h2>display: flex;</h2>
-    <h3 class="left">Justify-content positions a container's items along the main axis and accepts
+    <h3 class="left"><strong style="color:yellow">Justify-content</strong> positions a container's items along the main axis and accepts
     the following values:</h3>
 
-    <li>flex-start: group items at the start of a container's main axis</li>
-    <li>flex-end: group items at the end of the main axis</li>
-    <li>center: group items in the center of the main axis</li>
-    <li>space-between: evenly distribute items along the main axis such that the
-      first item aligns at the start and the final item aligns at the end</li>
-    <li>space-around: evenly distribute items along the main axis such that all items have equal space around them</li>
-
-    <h3 class="left">align-items positions a container's items across its cross axis and
+    <p><strong style="color:yellow">flex-start</strong>: group items at the start of a container's main axis</p>
+    <p><strong style="color:yellow">flex-end</strong>: group items at the end of the main axis</p>
+    <p><strong style="color:yellow">center</strong>: group items in the center of the main axis</p>
+    <p><strong style="color:yellow">space-between</strong>: evenly distribute items along the main axis such that the
+      first item aligns at the start and the final item aligns at the end</p>
+    <p><strong style="color:yellow">space-around</strong>: evenly distribute items along the main axis such that all items have equal space around them</p>
+<br>
+    <h3 class="left"><strong style="color:yellow">align-items</strong> positions a container's items across its cross axis and
       accepts the following values:</h3>
-      <li>flex-start: align items across the start of a container's cross axis</li>
-      <li>flex-end: align items across the end of the cross axis</li>
-      <li>center: align items across the center of the cross axis</li>
-      <li>baseline: align items such that their baselines line up</li>
-      <li>stretch: stretch items such that they span the entire cross axis</li>
+      <p><strong style="color:yellow">flex-start</strong>: align items across the start of a container's cross axis</p>
+      <p><strong style="color:yellow">flex-end</strong>: align items across the end of the cross axis</p>
+      <p><strong style="color:yellow">center</strong>: align items across the center of the cross axis</p>
+      <p><strong style="color:yellow">baseline</strong>: align items such that their baselines line up</p>
+      <p><strong style="color:yellow">stretch</strong>: stretch items such that they span the entire cross axis</p>
       <div class="space"></div>
   </div>
-      <h3 class="left">Flex Direction</h3>
+  <h2 id="flexbox">Flex Direction</h2>
       <img id="gridImg" src="./grid2.png" alt="grid">
-      <li>row: lay out the main axis from left to right</li>
-      <li>row-reverse: lay out the main axis from right to left</li>
-      <li>column: lay out the main axis from top to bottom</li>
-      <li>column-reverse: lay out the main axis from bottom to top</li>
+      <div class="flexed">
+      <p><strong style="color:yellow">row</strong>: lay out the main axis from left to right</p>
+      <p><strong style="color:yellow">row-reverse</strong>: lay out the main axis from right to left</p>
+      <p><strong style="color:yellow">column</strong>: lay out the main axis from top to bottom</p>
+      <p><strong style="color:yellow">column-reverse</strong>: lay out the main axis from bottom to top</p>
 
-     <h3 class="left">order</h3>
-     <p class="right">defines the order in which an item appears in the flex container
+     <h3>order</h3>
+     <p>defines the order in which an item appears in the flex container
        and accepts both positive and negative integer values. All flex
        items begin with a default order of 0, so an item with an order
        greater than 0 will be repositioned relative to items still set
        to their default orders.</p>
-       <li>#: position an item relative to the other items in the container</li>
+       #: position an item relative to the other items in the container
 
-      <h3 class="left">align-self</h3>
-      <li>flex-start: align item at the start of a container's cross axis</li>
-      <li>flex-end: align item at the end of the cross axis</li>
-      <li>center: align item at the center of the cross axis</li>
-      <li>accepts the values baseline and stretch</li>
+      <h3>align-self</h3>
+      <p><strong style="color:yellow">flex-start</strong>: align item at the start of a container's cross axis</p>
+      <p><strong style="color:yellow">flex-end</strong>: align item at the end of the cross axis</p>
+      <p><strong style="color:yellow">center</strong>: align item at the center of the cross axis</p>
+      accepts the values baseline and stretch</p>
 
-      <h3 class="left">flex wrap</h3>
-      <p class="right">Specifies whether flex items are forced on a single line or can be
+      <h3>flex wrap</h3>
+      <p>Specifies whether flex items are forced on a single line or can be
         wrapped on multiple lines.</p>
       <li>nowrap</li>
       <li>wrap</li>
       <li>wrap-reverse</li>
-      <h3 class="left">flex flow</h3>
-      <p class="right">Shorthand property for flex-direction and flex-wrap.</p>
+      <h3>flex flow</h3>
+      <p>Shorthand property for flex-direction and flex-wrap.</p>
       <li>flex-direction flex-wrap</li>
-
+    </div>
   </div>
   <h2 id="grid">Grid</h2>
   <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="nav_links">Click Here for the Complete
@@ -318,23 +319,23 @@
 
   </div>
   <h2 id="trans">CSS Transition</h2>
-  <div class="flexed">
-    <h3 class="left">Sub Properties</h3>
+  <div class="subsection">
+    <h2>Sub Properties</h2>
     <h3 class="left">transition-property</h3>
-    <li>Specifies the name or names of the CSS
-      properties to which transitions should be applied.</li>
+    <p class="right">Specifies the name or names of the CSS
+      properties to which transitions should be applied.</p>
     <h3 class="left">transition-duration</h3>
-    <li>Specifies the duration over which
+    <p class="right">Specifies the duration over which
       transitions should occur. You can specify a single duration that
       applies to all properties during the transition, or multiple
       values to allow each property to transition over a different period of
-      time.</li>
+      time.</p>
     <h3 class="left">transition-delay</h3>
-    <li>Defines how long to wait between the time a
-      property is changed and the transition actually begins.</li>
+    <p class="right">Defines how long to wait between the time a
+      property is changed and the transition actually begins.</p>
       <div class="space"></div>
       <h3 class="left">Example:</h3>
-    <p class="right">#delay {<br>
+    <p>#delay {<br>
       font-size: 14px; <br>
       transition-property: font-size;<br>
       transition-duration: 4s;<br>
@@ -346,11 +347,12 @@
       }<br>
     </p>
     </div>
+
     <h2 id="ani">CSS Animation</h2>
     <div class="flexed">
-     <h3 class="left">CSS animations are just like transitions but they have their own properties.</h3>
-    <p class="animated">Refresh Screen To See Me Change</p>
-    <p class="right">@keyframes example {<br>
+     <h3>CSS animations are just like transitions but they have their own properties.</h3>
+    <h2 class="animated">Hover Over Me To See Me Change</h2>
+    <p>@keyframes example {<br>
     from {background-color: red;}<br>
     to {background-color: yellow;}<br>
     }<br>
