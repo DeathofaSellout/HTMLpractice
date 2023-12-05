@@ -81,7 +81,7 @@ button:hover {
   background-color: rgba(0, 255, 255, 0.8);
 }
 .center {
-  /*text-align: center;*/
+  text-align: center;
   list-style-position: inside;
 }
 .container {
@@ -108,14 +108,14 @@ button:hover {
 }
 .left{
   grid-column-start: 1;
-  border: 2px solid aqua;
-    border-radius: 5px;
+  padding-right: 10px;
+    text-align: right;
+  /* border: 2px solid aqua;
+    border-radius: 5px; */
 }
 .right{
-  border: 2px solid aqua;
-    border-radius: 5px;
   grid-column-start: 2;
-  justify-content: left;
+  text-align: left;
 }
 .white h3 {
   color: whitesmoke;
