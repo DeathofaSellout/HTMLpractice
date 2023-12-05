@@ -65,13 +65,16 @@
       <p class="right">Matches elements of any type. <strong style="color:yellow"> * </strong></p>
       <h3 class="left">Attribute selectors</h3>
       <p class="right">Matches elements based on the presence or value of
-        a given attribute (e.g.<strong style="color:yellow"> a[title] </strong>matches all a elements with a title attribute)</p>
+        a given attribute (<strong style="color:yellow"> a[title] </strong>
+        matches all a elements with a title attribute).
+      </p>
   </div>
+
   <h2 id="multiple">Multiple Selectors</h2>
   <div class="subsection">
     <h3 class="left">Same style: multiple elements</h3>
-    <p class="right"> <strong style="color:yellow">h1,h2 {font-style: italic;}</strong></p>
-    <p class="right"> <strong style="color:yellow">h1#heading,h2.subheading {font-style: italic;}</strong></p>
+    <p class="right"><strong style="color:yellow">h1,h2 {font-style: italic;}</strong></p>
+    <p class="right"><strong style="color:yellow">h1#heading,h2.subheading {font-style: italic;}</strong></p>
   </div>
 
   <h2 id="comb">Combinators</h2>
@@ -81,54 +84,54 @@
     <p class="right"><strong style="color:yellow">p abbr {text-transform: uppercase;}</strong></p>
     <h3 class="left">Direct child selector</h3>
     <p class="right">Selects only the direct children of an element.</p>
-    <p class="right"><strong style="color:yellow">.menu > .is-active {
-      background-color: #ffe0b2;}</p>
+    <p class="right"><strong style="color:yellow">.menu > .is-active {background-color: #ffe0b2;}</strong></p>
     <h3 class="left">Adjacent sibling selectors</h3>
     <p class="right">First and Second element are styled.</p>
     <p class="right"><strong style="color:yellow">h1 + h2 {font-style: italic;}</strong></p>
   </div>
 
   <h2 id="psuedo">Pseudo Classes</h2>
-  <div class="flexed">
-    <p class="right">Specifies a special state of the selected element.</p>
+  <div class="subsection">
+    <p>Specifies a special state of the selected element.</p>
     <p style="color:yellow">a:hover {}</p>
   </div>
   <h2 id="psuedo2">Pseudo Selectors</h2>
   <div class="flexed">
     <p class="right">Pseudo-selectors select pseudo elements in the DOM. The two that you will use
-      most often are the ::after and the ::before pseudo-selectors. Both of them create a pseudo-element as a child of
-      the
-      element to which the property applies. The ::after variation creates the child as the last child of the selected
-      element. The ::before variation creates the child as the first child of the selected element. You can do neat
-      things
-      with that. For example, if you can put happy faces at the beginning of all paragraphs. </p>
+      most often are the ::after and the ::before pseudo-selectors. Both of them create a pseudo-element
+      as a child of the element to which the property applies. The ::after variation creates the child
+      as the last child of the selected element. The ::before variation creates the child as the first
+      child of the selected element. You can add designs! For example, you can put happy faces at
+      the beginning of all paragraphs.
+    </p>
     <p style="color:yellow">p::before {}</p>
   </div>
+
   <h2 id="examples">Examples of Each Selector</h2>
-  <div class="flexed">
+  <div class="subsection">
     <h3 class="left">Type selector</h3>
-    <p class="right">background-color: {background-color: #000000;}</p>
+    <p class="right" style="color:yellow">background-color: {background-color: #000000;}</p>
 
     <h3 class="left">Class selector </h3>
-    <p class="right">.active {color: #ffffff;}</p>
+    <p class="right" style="color:yellow">.active {color: #ffffff;}</p>
 
     <h3 class="left"> ID selector </h3>
-    <p class="right">#list { border: 1px solid gray; }</p>
+    <p class="right" style="color:yellow">#list { border: 1px solid gray; }</p>
 
     <h3 class="left"> Universal selector </h3>
-    <p class="right">* { padding: 10px; }</p>
+    <p class="right" style="color:yellow">* { padding: 10px; }</p>
 
     <h3 class="left"> Attribute selector </h3>
-    <p class="right">a[title] { font-size: 2em; }</p>
+    <p class="right" style="color:yellow">a[title] { font-size: 2em; }</p>
   </div>
+
   <h2 id="flexbox">Flexbox</h2>
   <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="nav_links">Click Here for
       the Complete
       Guide to Flexbox</a></li>
-  <div class="flexed">
-
-        <h2>display: flex;</h2>
-        <img id="gridImg" src="./grid.png" alt="grid">
+      <img id="gridImg" src="./grid.png" alt="grid">
+  <div class="subsection">
+    <h2>display: flex;</h2>
     <h3 class="left">Justify-content positions a container's items along the main axis and accepts
     the following values:</h3>
 
@@ -147,6 +150,7 @@
       <li>baseline: align items such that their baselines line up</li>
       <li>stretch: stretch items such that they span the entire cross axis</li>
       <div class="space"></div>
+  </div>
       <h3 class="left">Flex Direction</h3>
       <img id="gridImg" src="./grid2.png" alt="grid">
       <li>row: lay out the main axis from left to right</li>
@@ -182,7 +186,7 @@
   <h2 id="grid">Grid</h2>
   <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="nav_links">Click Here for the Complete
       Guide to Grid</a></li>
-  <div class="flexed">
+  <div class="subsection">
         <h2>display: grid;</h2>
         <h3 class="left">grid-template</h3>
         <p class="right">shorthand property that combines grid-template-rows and
