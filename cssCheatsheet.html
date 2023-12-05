@@ -228,35 +228,35 @@
         <p class="right">specifies order of the grid item</p>
   </div>
 <h2 id="specificity">Specificity</h2>
-  <div class="flexed">
+  <div class="subsection">
     <ul>
-      <h3 class="left">The four number calculation, in increasing order of importance</h3>
-      <li>the number of tag selectors in the selector</li>
-      <li>the number of class, pseudo-element, and attribute selectors in the selector</li>
-      <li>the number of id selectors in the selector</li>
-      <li>is this an inline style</li>
+      <h3>The four number calculation, in increasing order of importance.</h3>
+      <p>1. The number of tag selectors in the selector.</p>
+      <p>2. The number of class, pseudo-element, and attribute selectors in the selector.</p>
+      <p>3. The number of id selectors in the selector.</p>
+      <p>4. Is this an inline style?</p>
     </ul>
   </div>
   <h2>Box Model</h2>
-  <div class="flexed">
+  <div class="subsection">
     <h3 class="left">Properties:</h3>
     <p class="right">Width, Height, Margin, Border, Padding</p>
-    <h2>display: block;</h2>
+    <h3 class="left" style="color:yellow">display: block;</h3>
     <p class="right">Each new box appears on a new line/row. All properties are respected.</p>
-    <h2>display: inline;</h2>
-    <li>Each box appears next to each other in a single line until it fills up the available space.</li>
-    <li>Width and height don't apply.</li>
-    <li>The padding, margin and border of a box are applied, but they don't push other inline boxes away from the box.
-    </li>
-
-    <h2>Standard Box Model vs. border-box</h2>
+    <h3 class="left" style="color:yellow">display: inline;</h3>
+    <p class="right">Each box appears next to each other in a single line until it fills up the
+      available space.</p>
+    <p class="right">Width and height don't apply.</p>
+    <p class="right">The padding, margin and border of a box are applied, but they don't push other inline boxes away from the box.
+    </p>
+  </div>
+  <h2>Standard Box Model vs. border-box</h2>
+  <div class="subsection">
     <h3 class="left">Standard Box Model</h3>
-    <p class="right">In the standard Box Model, the width and height of an element set with CSS refers to the width and height of the
-      box's
-      content. Any padding, border and margin added to the element will get added to the total size of actual box. If
-      padding,
-      border or margin are removed from a box, the box size decreases, but the width and height of the content stays the
-      same.</p>
+    <p class="right">In the standard Box Model, the width and height of an element set with CSS refers to
+      the width and height of the box's content. Any padding, border and margin added to the element will
+      get added to the total size of actual box. If padding, border or margin are removed from a box, the
+      box size decreases, but the width and height of the content stays the same.</p>
     <h3 class="left">border-box</h3>
     <p class="right">Set the width and height of an element to include the padding and border. In CSS version 3, the box-sizing
       property was added to the CSS specification which allows you to set it to
@@ -273,27 +273,29 @@
       Don't have to resort to the float hack.
     </p>
     <h3 class="left">Padding</h3>
-    <p class="right">padding: top right bottom left;</p>
+    <p class="right" style="color:yellow">padding: top right bottom left;</p>
     <h3 class="left">Border</h3>
-    <p class="right">border: 3px solid #000000;</p>
+    <p class="right" style="color:yellow">border: 3px solid #000000;</p>
     <p class="right">border-width, border-style, and border-color</p>
     <h3 class="left">Margin</h3>
-    <p class="right">margin: 10% 20px 10px 5%;</p>
-    <p class="right">margin: top right bottom left;</p>
-
-    <div class="box">
-      <h3 class="left">Margin</h3>
-      <div class="flexed">
-        <h4>Border</h4>
-        <div class="box">Padding
-          <h5 class="flexed">Box</h5>
-        </div>
-      </div>
-      </h2>
-    </div>
+    <p class="right" style="color:yellow">margin: 10% 20px 10px 5%;</p>
+    <p class="right" style="color:yellow">margin: top right bottom left;</p>
   </div>
+ <br>
+<h2>A Box & All It's Elements</h2>
+  <div class="box">
+    <h3>Margin</h3>
+    <div class="flexed">
+      <h4>Border</h4>
+      <div class="box">Padding
+        <h5 class="flexed">Box</h5>
+      </div>
+    </div>
+    </h2>
+  </div>
+ <br>
   <h2 id="position">CSS Positioning</h2>
-  <div class="flexed">
+  <div class="subsection">
     <h3 class="left">Position and it's five properties</h3>
     <p class="right">Static, Relative, Absolute, Fixed, and Sticky</p>
     <p class="right">Top, right, left and bottom properties are all optional, except in the
