@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta>
-  <title>HTML</title>
+  <title>Github Commands</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="./style.css">
@@ -27,7 +27,7 @@
     <a class="cta" href="https://deathofasellout.github.io" target="_blank"><button>Contact Me</button></a>
   </header>
   <div>
-    <h1 class="center" id="top-of-the-page">Death of a Sellout's Github Cheat Sheet</h1>
+    <h1 class="center" id="top-of-the-page"><u>Death of a Sellout's Github Cheat Sheet</u></h1>
     <h2 class="center">Table of Contents</h2>
     <div class="center">
       <ul class="nav_links">
@@ -42,35 +42,35 @@
   <div class="container">
     <h2 id="variedCommands">Varied Commands</h2>
   <div class="subsection">
-    <h3> git init</h3><p>Create a new local repository.</p>
-    <h3>git clone /path/to/repository</h3><p>Create a working copy of a local repository.</p>
-    <h3>git add filename</h3><p>Add files.</p>
-    <h3>git commit -m "Commit message"</h3><p>Commit changes to head (but not yet to the remote repository).</p>
-    <h3>git push origin master</h3><p>Send changes to the master branch of your remote repository.</p>
-    <h3>git status</h3><p>List the files you've changed and those you still need to add or commit.</p>
-    <h3>git remote add origin "server"</h3><p>If you haven't connected your local repository to a remote server, add the server to be able to push to it.</p>
+    <h3 class="left"> git init</h3><p class="right">Create a new local repository.</p>
+    <h3 class="left">git clone /path/to/repository</h3><p class="right">Create a working copy of a local repository.</p>
+    <h3 class="left">git add filename</h3><p class="right">Add files.</p>
+    <h3 class="left">git commit -m "Commit message"</h3><p class="right">Commit changes to head (but not yet to the remote repository).</p>
+    <h3 class="left">git push origin master</h3><p class="right">Send changes to the master branch of your remote repository.</p>
+    <h3 class="left">git status</h3><p class="right">List the files you've changed and those you still need to add or commit.</p>
+    <h3 class="left">git remote add origin "server"</h3><p class="right">If you haven't connected your local repository to a remote server, add the server to be able to push to it.</p>
    </div>
-    <div class="subsection">
     <h2 id="branches">Branches</h2>
-    <h3>git checkout -b "branchname"</h3><p>Create a new branch and switch to it.</p>
-    <h3>git checkout "branchname"</h3><p>Switch from one branch to another.</p>
-    <h3>git branch</h3><p>List all the branches in your repo, and also tell you what branch you're currently in.</p>
-    <h3>git push origin "branchname"</h3><p>Push the branch to your remote repository, so others can use it:</p>
-    <h3>git push --all origin</h3><p>Push all branches to your remote repository.</p>
-    <h3>git push origin :"branchname"</h3><p>Delete a branch on your remote repository.</p>
-    </div>
     <div class="subsection">
+    <h3 class="left">git checkout -b "branchname"</h3><p class="right">Create a new branch and switch to it.</p>
+    <h3 class="left">git checkout "branchname"</h3><p class="right">Switch from one branch to another.</p>
+    <h3 class="left">git branch</h3><p class="right">List all the branches in your repo, and also tell you what branch you're currently in.</p>
+    <h3 class="left">git push origin "branchname"</h3><p class="right">Push the branch to your remote repository, so others can use it:</p>
+    <h3 class="left">git push --all origin</h3><p class="right">Push all branches to your remote repository.</p>
+    <h3 class="left">git push origin :"branchname"</h3><p class="right">Delete a branch on your remote repository.</p>
+    </div>
     <h2 id="update">Update from the remote repository</h2>
-    <h3>git pull</h3><p>Fetch and merge changes on the remote server to your working directory.</p>
-    <h3>git merge "branchname"</h3><p>To merge a different branch into your active branch.</p>
-    <h3>git add "filename"</h3><p>After you have manually resolved any conflicts, you mark the changed file.</p>
-    <h3>git diff</h3><p>View all the merge conflicts.</p>
-    </div>
     <div class="subsection">
-      <h2 id="undo">Undo local changes</h2>
-      <h3>git checkout -- "filename"</h3><p>If you mess up, you can replace the changes in your working tree with the last content in head.</p>
-      <h3>git fetch origin</h3>
-      <h3>git reset --hard origin/master</h3><p>Instead, to drop all your local changes and commits, fetch the latest
+    <h3 class="left">git pull</h3><p class="right">Fetch and merge changes on the remote server to your working directory.</p>
+    <h3 class="left">git merge "branchname"</h3><p class="right">To merge a different branch into your active branch.</p>
+    <h3 class="left">git add "filename"</h3><p class="right">After you have manually resolved any conflicts, you mark the changed file.</p>
+    <h3 class="left">git diff</h3><p class="right">View all the merge conflicts.</p>
+    </div>
+    <h2 id="undo">Undo local changes</h2>
+    <div class="subsection">
+      <h3 class="left">git checkout -- "filename"</h3><p class="right">If you mess up, you can replace the changes in your working tree with the last content in head.</p>
+      <h3 class="left">git fetch origin</h3><p class="right">Download contents from remote repository.</p>
+      <h3 class="left">git reset --hard origin/master</h3><p class="right">Instead, to drop all your local changes and commits, fetch the latest
       history from the server and point your local
     master branch at it, do this.</p>
     </div>

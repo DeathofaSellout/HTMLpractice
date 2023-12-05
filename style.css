@@ -14,11 +14,14 @@ li, a, button {
   color: whitesmoke;
   text-decoration: none;
 }
+strong {
+  font-family: sans-serif;
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 10px 10%;
 }
 
 nav {
@@ -60,6 +63,10 @@ h2 {
 }
 h3 {
   color:aqua;
+  font-family: sans-serif;
+}
+p{
+  font-family: sans-serif;
 }
 p, ul, ol {
   font-size: 20px;
@@ -137,4 +144,21 @@ button:hover {
 #gridImg {
   max-width: 75%;
   max-height: 300px;
+}
+@keyframes example {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: rgb(7, 7, 6);
+  }
+}
+
+.animated {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
 }
