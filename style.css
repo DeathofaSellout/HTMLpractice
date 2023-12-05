@@ -115,6 +115,7 @@ button:hover {
   border: 2px solid aqua;
     border-radius: 5px;
   grid-column-start: 2;
+  justify-content: left;
 }
 .white h3 {
   color: whitesmoke;
