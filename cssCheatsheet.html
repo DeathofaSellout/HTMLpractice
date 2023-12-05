@@ -129,8 +129,9 @@
   <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="nav_links">Click Here for
       the Complete
       Guide to Flexbox</a></li>
+      <br>
+      <h2>display: flex;</h2>
       <img id="gridImg" src="./grid.png" alt="grid">
-  <h2>display: flex;</h2>
   <div class="subsection">
     <h3 class="left"><strong style="color:yellow">Justify-content</strong> positions a container's items along the main axis and accepts
     the following values:</h3>
@@ -154,6 +155,7 @@
   <h2 id="flexbox">Flex Direction</h2>
       <img id="gridImg" src="./grid2.png" alt="grid">
       <div class="flexed">
+        <h3>Flex Direction</h3>
       <p><strong style="color:yellow">row</strong>: lay out the main axis from left to right</p>
       <p><strong style="color:yellow">row-reverse</strong>: lay out the main axis from right to left</p>
       <p><strong style="color:yellow">column</strong>: lay out the main axis from top to bottom</p>
@@ -165,62 +167,64 @@
        items begin with a default order of 0, so an item with an order
        greater than 0 will be repositioned relative to items still set
        to their default orders.</p>
-       #: position an item relative to the other items in the container
+      <p><strong style="color:yellow">#</strong>: position an item relative to the other items in the container</p>
 
       <h3>align-self</h3>
       <p><strong style="color:yellow">flex-start</strong>: align item at the start of a container's cross axis</p>
       <p><strong style="color:yellow">flex-end</strong>: align item at the end of the cross axis</p>
       <p><strong style="color:yellow">center</strong>: align item at the center of the cross axis</p>
-      accepts the values baseline and stretch</p>
+      <p>Accepts the values <strong style="color:yellow">baseline</strong> and <strong style="color:yellow">stretch</strong></p>
 
       <h3>flex wrap</h3>
       <p>Specifies whether flex items are forced on a single line or can be
         wrapped on multiple lines.</p>
-      <li>nowrap</li>
-      <li>wrap</li>
-      <li>wrap-reverse</li>
+      <p><strong style="color:yellow">nowrap</p>
+      <p><strong style="color:yellow">wrap</p>
+      <p><strong style="color:yellow">wrap-reverse</p>
       <h3>flex flow</h3>
       <p>Shorthand property for flex-direction and flex-wrap.</p>
-      <li>flex-direction flex-wrap</li>
+      <p style="color:yellow">flex-direction flex-wrap</p>
     </div>
   </div>
+
   <h2 id="grid">Grid</h2>
   <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" class="nav_links">Click Here for the Complete
       Guide to Grid</a></li>
-  <div class="subsection">
-        <h2>display: grid;</h2>
-        <h3 class="left">grid-template</h3>
-        <p class="right">shorthand property that combines grid-template-rows and
+      <br>
+      <h2>display: grid;</h2>
+  <div class="flexed">
+        <h3>grid-template</h3>
+        <p>shorthand property that combines grid-template-rows and
           grid-template-columns.</p>
-          <p class="right">grid-template: 50% 50% / 200px; will create a grid with two rows
+          <p>grid-template: 50% 50% / 200px; will create a grid with two rows
             that are 50% each, and one column that is 200 pixels
           wide.</p>
-        <h3 class="left">grid-template-columns: 20% 20% 20% 20% 20%;</h3>
-        <h3 class="left">grid-template-columns: repeat(5, 20%);</h3>
-        <p class="right">Each rule has five values which create five columns</p>
-        <p class="right">Use pixels, ems, percent, fractional (fr)</p>
-        <h3 class="left">grid-template-rows: 20% 20% 20% 20% 20%;</h3>
-        <h3 class="left">grid-template-rows: repeat(5, 20%);</h3>
-        <p class="right">Each rule has five values which create five rows</p>
-        <p class="right">Use pixels, ems, percent, fractional (fr)</p>
-        <h3 class="left">grid-column-start</h3>
+        <h3>grid-template-columns: 20% 20% 20% 20% 20%;</h3>
+        <h3>grid-template-columns: repeat(5, 20%);</h3>
+        <p>Each rule has five values which create five columns</p>
+        <p>Use pixels, ems, percent, fractional (fr)</p>
+        <h3>grid-template-rows: 20% 20% 20% 20% 20%;</h3>
+        <h3>grid-template-rows: repeat(5, 20%);</h3>
+        <p >Each rule has five values which create five rows</p>
+        <p >Use pixels, ems, percent, fractional (fr)</p>
+        <h3>grid-column-start</h3>
         <li>Specifies a grid item's start position in the columns</li>
         <li>span 2; //item spans 2 relative to end position</li>
-        <h3 class="left">grid-column-end</h3>
+        <h3>grid-column-end</h3>
         <li>Specifies a grid item's end position in the columns</li>
         <li>span 2; //item spans 2</li>
-        <h3 class="left">grid-column</h3>
+        <h3>grid-column</h3>
         <li>combines start and end, grid-column: 2/3;</li>
         <li>span works with grid column, 2/span 3</li>
-        <h3 class="left">grid-row-start</h3>
+        <h3>grid-row-start</h3>
         <li>which row to start</li>
-        <h3 class="left">grid-row</h3>
+        <h3>grid-row</h3>
         <li>combines start and end, grid-row: 2/3;</li>
-        <h3 class="left">grid-area</h3>
+        <h3>grid-area</h3>
         <li>accepts four values separated by slashes: grid-row-start,
           grid-column-start, grid-row-end, followed by grid-column-end.</li>
         <li>grid-area: 1 / 2 / 4/ 6;</li>
-        <h3 class="left">order</h3>
+        <h3>order</h3>
         <li>specifies order of the grid item</li>
   </div>
 <h2 id="specificity">Specificity</h2>
